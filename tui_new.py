@@ -1,22 +1,17 @@
 #!/usr/bin/env python3
 
-from asciimatics.widgets import Frame, TextBox, Layout, Label, Divider, Text,CheckBox, Button, VerticalDivider, Widget
-from asciimatics.event import KeyboardEvent
-from asciimatics.effects import Print, Background
-from asciimatics.renderers import BarChart, ImageFile, ColourImageFile, FigletText
+from asciimatics.widgets import Frame, TextBox, Layout, Divider, CheckBox, Button, VerticalDivider, Widget
+from asciimatics.effects import Print
+from asciimatics.renderers import BarChart, FigletText
 from asciimatics.scene import Scene
-from asciimatics.screen import Screen, Canvas
-from asciimatics.exceptions import ResizeScreenError, NextScene, StopApplication
+from asciimatics.screen import Screen
+from asciimatics.exceptions import ResizeScreenError, StopApplication
 from asciimatics.parsers import AsciimaticsParser
 from time import sleep
-from random import randint
 
 import subprocess
-import keyboard
 import random
 import sys
-import time
-import os
 
 ##
 ## VARIABLE DECLARATIONS

@@ -2,14 +2,7 @@
 
 import cwiid
 import time
-import os
-import subprocess
-import keyboard
-import time
-import libcamera
-#import picamera2
-from picamera2 import *
-from datetime import datetime
+from picamera import *
 
 activeCamera = False
 button_timeout = 0.1
