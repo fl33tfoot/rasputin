@@ -1,0 +1,157 @@
+{
+  "Attention": {
+    "filename": "attention",
+    "speed": 75,
+    "column": 2
+  },
+  "Yes": {
+    "filename": "yes",
+    "speed": 75,
+    "column": 3
+  },
+  "No": {
+    "filename": "no",
+    "speed": 75,
+    "column": 4
+  },
+  "Annoyed": {
+    "filename": "blink1",
+    "speed": 60,
+    "column": 2
+  },
+  "Blink 2": {
+    "filename": "blink2",
+    "speed": 60,
+    "column": 3
+  },
+  "Blink 3": {
+    "filename": "blink3",
+    "speed": 60,
+    "column": 4
+  },
+  "Charging": {
+    "filename": "charging",
+    "speed": 80,
+    "column": 2
+  },
+  "Coffee": {
+    "filename": "coffee",
+    "speed": 90,
+    "column": 3
+  },
+  "Cry": {
+    "filename": "cry",
+    "speed": 70,
+    "column": 4
+  },
+  "Dizzy": {
+    "filename": "dizzy",
+    "speed": 90,
+    "column": 2
+  },
+  "Error": {
+    "filename": "error",
+    "speed": 60,
+    "column": 3
+  },
+  "Heart Eyes": {
+    "filename": "heart",
+    "speed": 70,
+    "column": 4
+  },
+  "Laugh": {
+    "filename": "laugh",
+    "speed": 85,
+    "column": 2
+  },
+  "Load": {
+    "filename": "load",
+    "speed": 80,
+    "column": 3
+  },
+  "Low Battery": {
+    "filename": "lowbattery",
+    "speed": 80,
+    "column": 4
+  },
+  "Music": {
+    "filename": "music",
+    "speed": 70,
+    "column": 2
+  },
+  "Happy": {
+    "filename": "party",
+    "speed": 75,
+    "column": 3
+  },
+  "Sleep": {
+    "filename": "sleep",
+    "speed": 120,
+    "column": 4
+  },
+  "Sorry": {
+    "filename": "sorry",
+    "speed": 65,
+    "column": 2
+  },
+  "Vaporwave": {
+    "filename": "vapor",
+    "speed": 5000,
+    "column": 3
+  },
+  "Glitch": {
+    "filename": "glitch",
+    "speed": 60,
+    "column": 4
+  },
+  "Ahegao": {
+    "filename": "ahegao",
+    "speed": 2000,
+    "column": 2
+  },
+  "Sheesh": {
+    "filename": "sheesh",
+    "speed": 60,
+    "column": 3
+  },
+  "Ratio": {
+    "filename": "ratio",
+    "speed": 30,
+    "column": 4
+  },
+  "Pacman": {
+    "filename": "pacman",
+    "speed": 50,
+    "column": 2
+  },
+  "X Eyes": {
+    "filename": "xeyes",
+    "speed": 60,
+    "column": 3
+  },
+  "O Eyes": {
+    "filename": "oeyes",
+    "speed": 60,
+    "column": 4
+  },
+  "OwO": {
+    "filename": "owo2",
+    "speed": 120,
+    "column": 2
+  },
+  "UwU": {
+    "filename": "owo1",
+    "speed": 60,
+    "column": 3
+  },
+  "Big UwU": {
+    "filename": "uwu2",
+    "speed": 120,
+    "column": 4
+  },
+  "Big OwO": {
+    "filename": "uwu1",
+    "speed": 60,
+    "column": 2
+  }
+}
