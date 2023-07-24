@@ -11,7 +11,7 @@ Exports method to add new animations to json should you need to
 
 if __name__ == '__main__':
 
-    out_dir = Path('../jsons/')
+    out_dir = Path('../../jsons/')
     os.makedirs(out_dir, exist_ok=True)
 
     # Name: (filename, speed, column)

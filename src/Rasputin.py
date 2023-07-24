@@ -32,25 +32,7 @@ class Rasputin(Frame):
         self.current_menu = current_menu
 
         # INITIAL COLOR CONFIGURATION
-        self.palette['background'] = [0, Screen.A_BOLD, 0]
-        self.palette['button'] = [7, Screen.A_BOLD, 0]
-        self.palette['control'] = [7, Screen.A_BOLD, 0]
-        self.palette['selected_control'] = [0, Screen.A_BOLD, 7]
-        self.palette['field'] = [7, Screen.A_BOLD, 0]
-        self.palette['selected_field'] = [0, Screen.A_BOLD, 7]
-        self.palette['edit_text'] = [7, Screen.A_BOLD, 0]
-        self.palette['focus_edit_text'] = [0, Screen.A_BOLD, 7]
-        self.palette['focus_field'] = [7, Screen.A_BOLD, 0]
-        self.palette['selected_focus_field'] = [0, Screen.A_BOLD, 7]
-        self.palette['focus_button'] = [0, Screen.A_BOLD, 7]
-        self.palette['focus_control'] = [0, Screen.A_BOLD, 7]
-        self.palette['selected_focus_control'] = [0, Screen.A_BOLD, 7]
-        self.palette['red'] = [1, Screen.A_BOLD, 0]
-        self.palette['disabled'] = [7, Screen.A_BOLD, 0]
-        self.palette['title'] = [3, Screen.A_BOLD, 0]
-        self.palette['borders'] = [3, Screen.A_BOLD, 0]
-        self.palette['label'] = [7, Screen.A_BOLD, 0]
-
+        self.register_palette()
         # INITIAL TOP TAB LAYOUTS
         layout_tabs = Layout([19, 1, 19, 1, 19, 1, 19, 1, 20], fill_frame=False)
         layout_subtabs_main = Layout([19, 1, 19, 1, 19, 1, 19, 1, 20], fill_frame=False)
@@ -226,7 +208,7 @@ class Rasputin(Frame):
                                partial(self.render_face, animation=metadata['filename'], speed=metadata['speed'],
                                        root=root, path=path))
 
-    def register_palette(self, palette_path: str) -> None:
+    def register_palette(self, palette_path='../jsons/palettes.json') -> None:
         with open(palette_path, 'r') as json_file:
             palettes = json.load(json_file)
         for key in palettes:
