@@ -33,6 +33,7 @@ class Rasputin(Frame):
 
         # INITIAL COLOR CONFIGURATION
         self.register_palette()
+
         # INITIAL TOP TAB LAYOUTS
         layout_tabs = Layout([19, 1, 19, 1, 19, 1, 19, 1, 20], fill_frame=False)
         layout_subtabs_main = Layout([19, 1, 19, 1, 19, 1, 19, 1, 20], fill_frame=False)
@@ -51,20 +52,13 @@ class Rasputin(Frame):
 
         layout1 = Layout([24, 1, 25, 25, 25], fill_frame=False)
 
-        self.add_layout(layout_tabs)
+        layouts = [layout_tabs, layout_subtabs_main, layout_subtabs_extra,
+                   layout_subtabs_audio, layout_subtabs_audio, layout_subtabs_mgmt,
+                   layout_content_main, layout_content_extra, layout_content_audio,
+                   layout_content_mgmt, layout1, layout_console]
 
-        self.add_layout(layout_subtabs_main)
-        self.add_layout(layout_subtabs_extra)
-        self.add_layout(layout_subtabs_audio)
-        self.add_layout(layout_subtabs_mgmt)
-
-        self.add_layout(layout_content_main)
-        self.add_layout(layout_content_extra)
-        self.add_layout(layout_content_audio)
-        self.add_layout(layout_content_mgmt)
-
-        self.add_layout(layout1)
-        self.add_layout(layout_console)
+        for layout in layouts:
+            self.add_layout(layout)
 
         # CONSOLE LAYOUT
         self.console = layout_console.add_widget(
