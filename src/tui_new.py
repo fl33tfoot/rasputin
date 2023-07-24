@@ -12,7 +12,6 @@ from asciimatics.screen import Screen
 
 from src.Rasputin import Rasputin
 
-
 # Declarations
 activeFace = True
 activeCamera = False
@@ -49,6 +48,7 @@ def main(screen, scene):
                        button_timeout=button_timeout, vol=vol, current_menu=current_menu), -1, name="Rasputin"),
     ]
     screen.play(_scenes, stop_on_resize=True, start_scene=scene, allow_int=True)
+
 
 sleep(1)
 Screen.wrapper(load)

@@ -230,7 +230,7 @@ class Rasputin(Frame):
         # TODO: before this was sleep(0), which only accomplishes relinquishing CPU
         #    This may be unnecessary by setting niceness to 19 (allowing CPU to take control of higher priority)
         #    TLDR: This conditional may be unnecessary, or os.nice might not work and we need the sleep(0)
-        if self.active_camera or self.active_camera:
+        if self.active_camera or self.active_face:
             os.nice(19)
         return super().process_event(event)
 
