@@ -219,19 +219,25 @@ class Rasputin(Frame):
             animations = json.load(json_file)
         for button_name in animations:
             metadata = animations[button_name]
-            assert isinstance(metadata['filename'], str) and isinstance(metadata['speed'], int)
+            assert isinstance(metadata['filename'], str) and isinstance(metadata['speed'], int)  # So linter is happy
             register_animation(layout,
                                button_name,
                                metadata['column'],
                                partial(self.render_face, animation=metadata['filename'], speed=metadata['speed'],
                                        root=root, path=path))
 
+    def register_palette(self, palette_path: str) -> None:
+        with open(palette_path, 'r') as json_file:
+            palettes = json.load(json_file)
+        for key in palettes:
+            palette_info = palettes[key]
+            self.palette[key] = [palette_info['foreground_color'],
+                                 palette_info['attribute'],
+                                 palette_info['background_color']]
+
     def process_event(self, event: Event) -> [None | Event]:
-        # TODO: before this was sleep(0), which only accomplishes relinquishing CPU
-        #    This may be unnecessary by setting niceness to 19 (allowing CPU to take control of higher priority)
-        #    TLDR: This conditional may be unnecessary, or os.nice might not work and we need the sleep(0)
         if self.active_camera or self.active_face:
-            os.nice(19)
+            sleep(0)  # Context switch if necessary
         return super().process_event(event)
 
     def exit_event(self) -> None:

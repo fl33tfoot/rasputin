@@ -1,0 +1,92 @@
+{
+  "background": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "button": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "control": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "selected_control": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "field": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "selected_field": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "edit_text": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "focus_edit_text": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "focus_field": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "selected_focus_field": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "focus_button": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "focus_control": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "selected_focus_control": {
+    "foreground_color": 0,
+    "attribute": 1,
+    "background_color": 7
+  },
+  "red": {
+    "foreground_color": 1,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "disabled": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "title": {
+    "foreground_color": 3,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "borders": {
+    "foreground_color": 3,
+    "attribute": 1,
+    "background_color": 0
+  },
+  "label": {
+    "foreground_color": 7,
+    "attribute": 1,
+    "background_color": 0
+  }
+}
