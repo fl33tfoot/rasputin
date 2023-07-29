@@ -106,9 +106,9 @@ class Rasputin(Frame):
         layout_subtabs_main.add_widget(VerticalDivider(), 3)
         layout_subtabs_main.add_widget(CheckBox("SOUND", on_change=self._toggle_audio, name="AUDIO"), 4)
         layout_subtabs_main.add_widget(VerticalDivider(), 5)
-        layout_subtabs_main.add_widget(Button("PAIR SPEAKER", self._vol_up), 6)
+        layout_subtabs_main.add_widget(Button("PAIR SPEAKER", self._pair_bluetooth_speaker), 6)
         layout_subtabs_main.add_widget(VerticalDivider(), 7)
-        layout_subtabs_main.add_widget(Button("KILL FACE", self._vol_up), 8)
+        layout_subtabs_main.add_widget(Button("KILL FACE", self.force_kill), 8)
 
         # DIVIDER SPACERS
         layout_subtabs_main.add_widget(Divider(draw_line=True), 0)
@@ -128,9 +128,9 @@ class Rasputin(Frame):
         layout_subtabs_audio.add_widget(VerticalDivider(), 3)
         layout_subtabs_audio.add_widget(CheckBox("SOUND", on_change=self._toggle_audio, name="AUDIO"), 4)
         layout_subtabs_audio.add_widget(VerticalDivider(), 5)
-        layout_subtabs_audio.add_widget(Button("PAIR SPEAKER", self._vol_up), 6)
+        layout_subtabs_audio.add_widget(Button("PAIR SPEAKER", self._pair_bluetooth_speaker), 6)
         layout_subtabs_audio.add_widget(VerticalDivider(), 7)
-        layout_subtabs_audio.add_widget(Button("RANDOM AUDIO", self._vol_up), 8)
+        layout_subtabs_audio.add_widget(Button("RANDOM AUDIO", self._play_audio_random), 8)
 
         # DIVIDER SPACERS
         layout_subtabs_audio.add_widget(Divider(draw_line=True), 0)
